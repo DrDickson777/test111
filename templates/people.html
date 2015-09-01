@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+
+
+{% block content %}
+
+
+<form method="POST" action="/result.php" target="_blank">
+    {% for people in peoples %}
+    <div class="people" id="pp{{people.n}}" onclick="vibor({{people.n}})">
+    	<img src="/img/{{people.num}}.jpg" alt="" />
+		<input type="hidden" name="re{{people.n}}" id="re{{people.n}}" value="0" >
+    </div>
+    {% endfor %}
+	<p style="text-align:center;"><input type="submit" value="голосовать" id="inp" name="inp"></p>
+</form>
+{% endblock %}

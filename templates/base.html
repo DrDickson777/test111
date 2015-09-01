@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <title>Тестовое задание</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="widht=device-width, initial-scale=1.0">
+	<!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+  <!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+  <link href="http://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=latin,cyrillic" rel="stylesheet" type="text/css">
+  <link href="/css/bootstrap.css" rel="stylesheet">
+<link href="/css/main.css" rel="stylesheet">
+<script>
+function vibor(sv){
+
+var stt = 're'+sv;
+	for(var i=0; i<=14;i++)
+	{
+	var tt = 're'+i;
+	document.getElementById(tt).value='0';
+	}
+		document.getElementById(stt).value='1';
+		var st = '#'+'pp'+sv;
+		$('.people').css('border','2px solid #ffffff');
+		$(st).css('border','2px solid #ff0000');
+	
+
+}
+</script>
+</head>
+<body>
+<section id="header">
+	<div class="container">
+		<div class="row">
+		
+		<a href="/" class="logo"><img src="/img/logo.png" alt="" /></a>
+			<ul id="main_menu">
+				<li class="first"><a href="#"><b>Новости</b></a></li>
+					<li><a href="#"><b>Телеканал</b></a></li>
+						<li><a href="#"><b>Афиша</b></a></li>
+							<li><a href="#"><b>Кубанотека</b></a></li>
+								<li><a href="#"><b>Видео</b></a></li>
+			</ul>
+			<a href="/" id="on_air"><img src="/img/on_air.png" /></a>
+				<input type="text" placeholder="Поиск" name="search" id="search" value="" maxlength="60">
+				
+		</div>
+	</div>
+</section>
+
+<section id="sub1">
+	<div class="container">
+		<div class="row1">
+		<b>КЛЮЧЕВЫЕ ТЕМЫ:</b>
+		</div>
+			<div class="row2">
+				<ul id="temi">
+					<li>Убийство Бориса Немцова</li>
+						<li>Опера без границ</li>
+							<li>Песни Победы</li>
+								<li>Рост цен на продукты</li>
+									<li>Законы и законопроекты</li>
+				</ul>			
+			</div>
+	</div>
+</section>	
+
+<section id="sub2">
+	<div class="container">
+		<div class="row">
+		<b>ЛИЦА ТЕЛЕКАНАЛА</b>
+		</div>
+	</div>
+</section>		
+
+<section id="main_content">
+	<div class="container">
+		<div class="row">
+			<div class="row_left">
+			    {% block content %}
+				{% endblock %}
+			</div>
+				<div class="row_right">
+					<img src="/img/banner_right1.jpg" alt="" class="banner1" />
+					<img src="/img/banner_right3.jpg" alt="" class="banner3" />
+					<img src="/img/banner_right2.jpg" alt="" class="banner2" />
+				</div>
+		</div>
+	</div>
+</section>
+<div class="clear"></div>
+
+<footer>
+	<div class="container">
+		<div class="row">
+
+		</div>
+	</div>
+</footer>		
+
+   <script src="http://code.jquery.com/jquery-latest.js"></script>
+   <script src="/js/bootstrap.min.js"></script>
+</body>
+</html>
